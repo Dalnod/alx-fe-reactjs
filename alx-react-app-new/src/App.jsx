@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import MainContent from "./components/MainContent"
 import Footer from "./components/Footer"
 import UserProfile from "./components/UserProfile";
+import Counter from "./components/Counter";
 
 export default function App () {
     return (
@@ -12,6 +13,7 @@ export default function App () {
             <MainContent />
             <Footer />
             <UserProfile name="Alice" age="25" bio="Loves hiking and photography"  />
+            <Counter />
         </>
     )
 };

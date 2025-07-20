@@ -1,0 +1,80 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+/* Navbar container */
+nav {
+  background-color: #2c3e50; /* Dark blue-gray */
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Unordered list styling */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 2rem;
+}
+
+/* List items */
+nav li {
+  position: relative;
+}
+
+/* Link styling */
+nav a {
+  color: #ecf0f1; /* Light gray */
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+  background-color: #34495e; /* Slightly lighter blue-gray */
+  color: #fff;
+}
+
+/* Active link styling */
+nav a.active {
+  background-color: #3498db; /* Bright blue */
+  color: white;
+}
+
+/* Underline animation on hover */
+nav li::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #3498db;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+nav li:hover::after {
+  width: 80%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  nav li::after {
+    display: none;
+  }
+}
+

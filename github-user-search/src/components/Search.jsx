@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { getUserDetails } from '../services/githubService'
 
-const Search = () => {
+const fectchUserData = () => {
     const [formData, setFormData] = useState('');
     const [user, setUser] = useState(null);
     const [error, setError] = useState('');
@@ -54,4 +54,4 @@ const Search = () => {
     );
 }
 
-export default Search;
+export default fectchUserData;

@@ -114,21 +114,21 @@ const Search = () => {
                     placeholder="Username"
                     value={formData}
                     onChange={handleChange1}
-                    className="mb-4 w-full px-4 py-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-blue-300 text-blue-900 bg-blue-50 font-semibold shadow-sm"
+                    className="mb-4 w-full px-4 py-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-black-300 text-blue-900 bg-blue-50 font-semibold shadow-sm"
                 />
                 <input
                     type="text"
                     placeholder='Location'
                     value={location}
                     onChange={handleChange2}
-                    className="mb-4 w-full px-4 py-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-blue-300 text-blue-900 bg-blue-50 font-semibold shadow-sm"
+                    className="mb-4 w-full px-4 py-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-black-300 text-blue-900 bg-blue-50 font-semibold shadow-sm"
                 />
                 <input
                     type="number"
                     placeholder='Min Repositories'
                     value={minRepos}
                     onChange={handleChange3}
-                    className="mb-6 w-full px-4 py-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-blue-300 text-blue-900 bg-blue-50 font-semibold shadow-sm"
+                    className="mb-6 w-full px-4 py-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-black-300 text-blue-900 bg-blue-50 font-semibold shadow-sm"
                 />
                 <button
                     type="submit"

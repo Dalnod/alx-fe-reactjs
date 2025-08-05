@@ -7,7 +7,7 @@ export const fetchUserData = async (searchTerm) => {
 
 import axios from 'axios';
 
-const BASE_URL = 'https://api.github.com/search/user?q';
+const BASE_URL = 'https://api.github.com/search/user';
 
 // Accepts an object with username, location, and minRepos, and builds the query string
 export const searchUsers = async ({ username = '', location = '', minRepos = '' }) => {

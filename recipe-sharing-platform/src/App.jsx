@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import './index.css'
+import HomePage from './components/HomePage'
 
 function App() {
   
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
       <div>
-       <h1 className='text-4xl font-semibold text-blue-900'>Sharp!!</h1> 
+       <HomePage /> 
       </div>   
     </>
   )

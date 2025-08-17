@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import userData from '../data.json';
 
 function Homepage() {
@@ -29,7 +30,7 @@ function Homepage() {
                 {data.map((recipeData) => {
                     const isFavorite = favorites.includes(recipeData.id);
                     return (
-                        <div key={recipeData.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <Link to={`/recipe/${recipeData.id}`} key={recipeData.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 block">
                             {/* Recipe Image */}
                             <div className="relative">
                                 <img
@@ -38,7 +39,7 @@ function Homepage() {
                                     className="w-full h-48 object-cover"
                                 />
                                 <button
-                                    onClick={() => toggleFavorite(recipeData.id)}
+                                    onClick={e => { e.preventDefault(); toggleFavorite(recipeData.id); }}
                                     className="absolute top-3 right-3 p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white transition-all duration-200"
                                 >
                                     {isFavorite ? (
@@ -83,7 +84,7 @@ function Homepage() {
                                     </button>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     );
                 })}
             </div>
